@@ -30,9 +30,16 @@ export default function RootLayout({
       lang="en"
       className={`${jost.variable} ${scheherazade.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
-        <Header />
-        {children}
+      <body className="min-h-full flex flex-col font-sans bg-[var(--background)] text-[var(--foreground)]">
+        
+        <div className="relative z-[99999] isolate">
+          <Header />
+        </div>
+
+        <div className="relative z-0">
+          {children}
+        </div>
+
       </body>
     </html>
   );

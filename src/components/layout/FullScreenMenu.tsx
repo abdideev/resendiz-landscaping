@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { X, Menu } from "lucide-react";
+import { X } from "lucide-react";
 
 const navLinks = [
   { label: "HOME", href: "/#home" },
