@@ -35,9 +35,7 @@ export function Header() {
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-12 h-24 transition-all duration-500 ease-in-out ${
-          scrolled
-            ? "bg-[#0A2D18]/90 backdrop-blur-md border-b border-brand-gold/20 shadow-lg"
-            : "bg-transparent"
+          scrolled ? " backdrop-blur-sm shadow-lg" : "bg-transparent"
         }`}
       >
         <Link href="/" className="relative z-50 focus:outline-none">
@@ -58,9 +56,8 @@ export function Header() {
         >
           <Menu size={32} strokeWidth={2} />
         </button>
-
-        <FullScreenMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
       </header>
+      <FullScreenMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
     </>
   );
 }
