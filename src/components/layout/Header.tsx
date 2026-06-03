@@ -35,7 +35,9 @@ export function Header() {
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-12 h-24 transition-all duration-500 ease-in-out ${
-          scrolled ? " backdrop-blur-sm shadow-lg" : "bg-transparent"
+          scrolled
+            ? " bg-[#F5F6F0]/10 backdrop-blur-sm border-b border-[#F5F6F0]/20"
+            : "bg-transparent border-b border-white/0"
         }`}
       >
         <Link href="/" className="relative z-50 focus:outline-none">

@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
 import { Header } from "@/components/layout/Header";
-import { Jost, Scheherazade_New } from "next/font/google";
+import { Jost, Scheherazade_New, Geist, Inter } from "next/font/google";
 import "./globals.css";
+import { cn } from "@/lib/utils";
+
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+
+const inter = Inter({variable:'--font-inter'});
 
 const jost = Jost({
   variable: "--font-jost",
@@ -28,7 +33,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${jost.variable} ${scheherazade.variable} h-full antialiased`}
+      className={cn("h-full", "antialiased", jost.variable, scheherazade.variable, inter.variable, "font-sans", geist.variable)}
     >
       <body className="min-h-full flex flex-col font-sans bg-[var(--background)] text-[var(--foreground)]">
         
