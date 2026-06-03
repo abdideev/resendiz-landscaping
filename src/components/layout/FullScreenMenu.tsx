@@ -34,7 +34,7 @@ interface FullScreenMenuProps {
 export function FullScreenMenu({ isOpen, onClose }: FullScreenMenuProps) {
   return (
     <div
-      className={`fixed inset-0 z-[100] flex flex-col items-center justify-center bg-brand-black/90 backdrop-blur-md transition-opacity duration-500 ease-in-out ${
+      className={`fixed inset-0 z-[100] flex flex-col items-center justify-center bg-brand-black/80 backdrop-blur-md transition-opacity duration-500 ease-in-out ${
         isOpen
           ? "opacity-100 pointer-events-auto"
           : "opacity-0 pointer-events-none"
@@ -49,7 +49,7 @@ export function FullScreenMenu({ isOpen, onClose }: FullScreenMenuProps) {
       </button>
 
       <nav className="flex flex-col items-center w-full mt-[-5vh]">
-        <ul className="flex flex-col items-center gap-2 md:gap-4 list-none">
+        <ul className="flex flex-col items-center gap-2 md:gap-2 list-none">
           {navLinks.map((link, i) => (
             <li key={link.href} className="overflow-hidden">
               <Link
