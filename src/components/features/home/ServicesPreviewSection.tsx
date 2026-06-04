@@ -14,6 +14,7 @@ export function ServicesPreviewSection() {
           alt="Our Landscaping Services"
           fill
           className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+          quality={75}
         />
         <div className="absolute inset-0 bg-black/60 transition-colors duration-500 group-hover:bg-black/30 backdrop-blur-[0.8px]" />
 
@@ -34,6 +35,7 @@ export function ServicesPreviewSection() {
           alt="View Our Landscaping Projects"
           fill
           className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+          quality={75}
         />
         <div className="absolute inset-0 bg-black/60 transition-colors duration-500 group-hover:bg-black/30 backdrop-blur-[0.8px]" />
 

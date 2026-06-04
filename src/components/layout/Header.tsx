@@ -40,7 +40,7 @@ export function Header() {
             : "bg-transparent border-b border-white/0"
         }`}
       >
-        <Link href="/" className="relative z-50 focus:outline-none">
+        <Link href="/#home" className="relative z-50 focus:outline-none">
           <Image
             src="/images/resendiz-landscaping-logo.webp"
             alt="Resendiz Landscaping"

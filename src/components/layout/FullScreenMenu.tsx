@@ -21,7 +21,7 @@ const socialLinks = [
     href: "https://www.facebook.com/share/1EAesmBzX2/?mibextid=wwXIfr",
   },
   {
-    label: "NextDoor",
+    label: "Nextdoor",
     href: "https://nextdoor.com/page/resendiz-landscaping-leesburg-va?share_platform=3&utm_campaign=1780110639176&share_action_id=c919d3b5-74ef-4816-9651-43a3c8ad3b61",
   },
 ];
@@ -54,6 +54,7 @@ export function FullScreenMenu({ isOpen, onClose }: FullScreenMenuProps) {
             <li key={link.href} className="overflow-hidden">
               <Link
                 href={link.href}
+                replace
                 onClick={onClose}
                 className="relative inline-block pb-2 font-serif text-5xl md:text-7xl text-white/80 hover:text-white tracking-normal uppercase transition-all duration-300 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-[2px] after:bg-brand-gold-light after:w-0 hover:after:w-full after:transition-all after:duration-300 after:ease-in-out"
                 style={{

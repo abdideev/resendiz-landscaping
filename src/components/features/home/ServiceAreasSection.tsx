@@ -12,7 +12,7 @@ export function ServiceAreasSection() {
   return (
     <section
       id="areas"
-      className="w-full bg-background py-32 px-6 md:px-12 lg:px-16"
+      className="w-full bg-background py-32 pb-60 px-6 md:px-12 lg:px-16"
     >
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 items-center">
         {/* Contenido izquierdo */}
