@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
 import { Jost, Scheherazade_New, Geist, Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
-const inter = Inter({variable:'--font-inter'});
+const inter = Inter({ variable: "--font-inter" });
 
 const jost = Jost({
   variable: "--font-jost",
@@ -33,18 +34,24 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cn("h-full", "antialiased", jost.variable, scheherazade.variable, inter.variable, "font-sans", geist.variable)}
+      className={cn(
+        "h-full",
+        "antialiased",
+        jost.variable,
+        scheherazade.variable,
+        inter.variable,
+        "font-sans",
+        geist.variable,
+      )}
     >
       <body className="min-h-full flex flex-col font-sans bg-[var(--background)] text-[var(--foreground)]">
-        
         <div className="relative z-[99999] isolate">
           <Header />
         </div>
 
-        <div className="relative z-0">
-          {children}
-        </div>
+        <main className="relative z-0 flex-1 flex flex-col">{children}</main>
 
+        <Footer />
       </body>
     </html>
   );

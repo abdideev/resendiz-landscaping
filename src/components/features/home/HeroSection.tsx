@@ -14,7 +14,7 @@ export function HeroSection() {
           fill
           priority
           className="object-cover"
-          quality={90}
+          quality={75}
         />
         <div className="absolute inset-0 bg-black/50 backdrop-blur-[0.8px]" />
       </div>
@@ -42,7 +42,7 @@ export function HeroSection() {
             Contact
           </Link>
           <Link
-            href="#"
+            href="tel:+15719197885"
             className="flex items-center justify-center w-[260px] md:w-[280px] bg-[#072A1B] hover:bg-[#0A3D27] text-white font-sans text-[11px] md:text-xs font-semibold tracking-[0.2em] uppercase py-3.5 md:py-4 transition-all duration-300 hover:scale-105 rounded-xs"
           >
             Call Now
