@@ -4,6 +4,7 @@ import { TestimonialSection } from "@/components/features/home/TestimonialsSecti
 import { ServiceAreasSection } from "@/components/features/home/ServiceAreasSection";
 import { IntroductionSection } from "@/components/features/services/IntroductionSection";
 import { ServicesIncludeSection } from "@/components/features/services/ServicesIncludeSection";
+import { ContactCtaSection } from "@/components/features/services/ContactCtaSection";
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
       <ServiceAreasSection />
       <IntroductionSection />
       <ServicesIncludeSection />
+      <ContactCtaSection />
     </main>
   );
 }
