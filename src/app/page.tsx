@@ -3,6 +3,7 @@ import { ServicesPreviewSection } from "@/components/features/home/ServicesPrevi
 import { TestimonialSection } from "@/components/features/home/TestimonialsSection";
 import { ServiceAreasSection } from "@/components/features/home/ServiceAreasSection";
 import { IntroductionSection } from "@/components/features/services/IntroductionSection";
+import { ServicesIncludeSection } from "@/components/features/services/ServicesIncludeSection";
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <TestimonialSection />
       <ServiceAreasSection />
       <IntroductionSection />
+      <ServicesIncludeSection />
     </main>
   );
 }

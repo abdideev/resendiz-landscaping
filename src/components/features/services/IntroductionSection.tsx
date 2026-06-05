@@ -9,7 +9,7 @@ export function IntroductionSection() {
       className="relative w-full py-16 px-4 md:px-8 lg:px-12"
     >
       <div className="max-w-5xl mx-auto text-center">
-        <p className="max-w-2xs mx-auto text-brand-gold-light uppercase tracking-widest mb-4">
+        <p className="text-brand-gold font-sans font-medium uppercase tracking-[0.2em] leading-3 text-sm md:text-base">
           OUR EXPERTISE
         </p>
         <h2 className="text-6xl md:text-8xl font-serif mb-6">Services</h2>
