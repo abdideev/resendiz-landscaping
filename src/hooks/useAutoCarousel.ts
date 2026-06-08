@@ -8,7 +8,7 @@ interface UseAutoCarouselOptions {
 
 export function useAutoCarousel({
   itemCount,
-  intervalMs = 3000,
+  intervalMs = 2000,
   paused = false,
 }: UseAutoCarouselOptions) {
   const [activeIndex, setActiveIndex] = useState(0);

@@ -5,7 +5,7 @@ export function ServicesPreviewSection() {
   return (
     <section className="w-full grid grid-cols-1 md:grid-cols-2 gap-3 pt-3 bg-background h-[80vh] min-h-[600px] md:h-[600px]">
       <Link
-        href="#services"
+        href="/services"
         className="relative group overflow-hidden h-full flex items-center justify-center cursor-pointer"
         aria-label="Navigate to our services"
       >
