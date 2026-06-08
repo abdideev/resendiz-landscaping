@@ -27,10 +27,8 @@ export function ContactCtaSection() {
         priority={false}
       />
 
-      {/* Overlay oscuro para legibilidad del texto */}
       <div className="absolute inset-0 bg-black/50" />
 
-      {/* Contenido */}
       <div className="relative z-10 w-full max-w-6xl mx-auto px-4 md:px-8 lg:px-12">
         <div className="max-w-xl">
           <h2 className="text-3xl md:text-5xl font-serif text-white mb-6 leading-tight">
