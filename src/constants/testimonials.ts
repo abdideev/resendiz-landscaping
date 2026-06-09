@@ -1,11 +1,6 @@
-export interface Testimonial {
-  id: string;
-  name: string;
-  location: string;
-  body: string;
-}
+import { Testimonial } from "@/types/testimonials";
 
-export const testimonials: Testimonial[] = [
+export const TESTIMONIALS: Testimonial[] = [
   {
     id: "1",
     name: "Sarah M.",

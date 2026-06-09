@@ -13,7 +13,7 @@ export function IntroductionSection() {
           OUR EXPERTISE
         </p>
         <h2 className="text-6xl md:text-8xl font-serif mb-6">Services</h2>
-        <div className="w-2xl h-px bg-gray-300 my-16 justify-center mx-auto" />
+        <div className="w-32 h-px bg-gray-300 my-16 justify-center mx-auto" />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-full mx-auto text-left">
           <Image
@@ -21,7 +21,7 @@ export function IntroductionSection() {
             alt="Services Introduction"
             width={400}
             height={200}
-            className="object-cover rounded-lg shadow-lg"
+            className="object-cover rounded-lg shadow-lg transition-transform duration-300 ease-out hover:scale-105"
           />
           <div className="flex flex-col space-y-4 m-auto justify-center gap-10">
             <p className="font-serif text-4xl font-normal leading-11 text-[003527]">

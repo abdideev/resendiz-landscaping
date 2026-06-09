@@ -36,8 +36,8 @@ export function HeroSection() {
 
         <div className="flex flex-col items-center justify-center gap-4 w-full">
           <Link
-            href="#services"
-            className="flex items-center justify-center w-[260px] md:w-[280px] bg-[#7A5A12] hover:bg-[#916B16] text-white font-sans text-[11px] md:text-xs font-semibold tracking-[0.2em] uppercase py-3.5 md:py-4 transition-all duration-300 hover:scale-105 rounded-xs"
+            href="services"
+            className="flex items-center justify-center w-[260px] md:w-[280px] bg-brand-gold hover:bg-brand-gold-light text-white font-sans text-[11px] md:text-xs font-semibold tracking-[0.2em] uppercase py-3.5 md:py-4 transition-all duration-300 hover:scale-105 rounded-xs"
           >
             Contact
           </Link>
