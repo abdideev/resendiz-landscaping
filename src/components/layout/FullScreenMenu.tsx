@@ -4,9 +4,9 @@ import Link from "next/link";
 import { X } from "lucide-react";
 
 const navLinks = [
-  { label: "HOME", href: "/#home" },
+  { label: "HOME", href: "/" },
   { label: "SERVICES", href: "/services" },
-  { label: "PORTFOLIO", href: "/#portfolio" },
+  { label: "PORTFOLIO", href: "/portfolio" },
   { label: "REVIEWS", href: "/#reviews" },
   { label: "AREAS", href: "/#areas" },
 ];

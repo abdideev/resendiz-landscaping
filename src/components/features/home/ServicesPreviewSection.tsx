@@ -26,7 +26,7 @@ export function ServicesPreviewSection() {
       </Link>
 
       <Link
-        href="#portfolio"
+        href="portfolio"
         className="relative group overflow-hidden h-full flex items-center justify-center cursor-pointer"
         aria-label="Navigate to our portfolio"
       >

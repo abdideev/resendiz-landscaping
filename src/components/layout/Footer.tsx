@@ -17,9 +17,9 @@ const socialLinks = [
 ];
 
 const navLinks = [
-  { label: "Home", href: "/#home" },
+  { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
-  { label: "Portfolio", href: "/#portfolio" },
+  { label: "Portfolio", href: "/portfolio" },
   { label: "Reviews", href: "/#reviews" },
   { label: "Areas", href: "/#areas" },
 ];
@@ -30,7 +30,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto flex flex-col lg:grid lg:grid-cols-3 gap-12 lg:gap-12 lg:items-center">
         {/* Columna Izquierda */}
         <div className="flex flex-col gap-6 order-1 lg:order-1 items-start">
-          <Link href="/#home" className="relative z-50 focus:outline-none">
+          <Link href="/" className="relative z-50 focus:outline-none">
             <Image
               src="/images/resendiz-landscaping-logo.webp"
               alt="Resendiz Landscaping"
