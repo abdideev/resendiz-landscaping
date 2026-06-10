@@ -27,13 +27,11 @@ export function ContactCtaSection() {
         priority={false}
       />
 
-      {/* Overlay oscuro para legibilidad del texto */}
       <div className="absolute inset-0 bg-black/50" />
 
-      {/* Contenido */}
       <div className="relative z-10 w-full max-w-6xl mx-auto px-4 md:px-8 lg:px-12">
         <div className="max-w-xl">
-          <h2 className="text-3xl md:text-5xl font-serif text-white mb-6 leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-serif text-white mb-6 leading-tight">
             {title}
           </h2>
 
@@ -44,7 +42,8 @@ export function ContactCtaSection() {
           <Link
             href={buttonHref}
             className="
-              inline-block bg-brand-gold text-white
+              inline-block w-full sm:w-auto text-center
+              bg-brand-gold text-white
               px-8 py-4 font-semibold tracking-wider uppercase text-sm
               transition-all duration-300
               hover:bg-brand-gold-light hover:shadow-lg hover:-translate-y-0.5
