@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 import { Marquee } from "@/components/ui/marquee";
-import { testimonials } from "@/constants/testimonials";
+import { TESTIMONIALS as testimonials } from "@/constants/testimonials";
 import { User } from "lucide-react"; 
 
 const review = testimonials;
