@@ -12,7 +12,7 @@ export function IntroductionSection() {
         <p className="text-brand-gold font-sans font-medium uppercase tracking-[0.2em] text-sm md:text-base">
           OUR EXPERTISE
         </p>
-        <h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-serif mb-6">
+        <h2 className="text-brand-green text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-serif mb-6">
           Services
         </h2>
         <div className="max-w-2xl w-full h-px bg-gray-300 my-10 md:my-16 mx-auto" />
@@ -28,13 +28,13 @@ export function IntroductionSection() {
             />
           </div>
           <div className="flex flex-col justify-center gap-6 md:gap-10">
-            <p className="font-serif text-2xl md:text-4xl font-normal leading-tight text-[#003527]">
+            <p className="font-serif text-2xl md:text-4xl font-normal leading-tight text-[#003527] text-bg-black">
               Providing a{" "}
-              <span className="font-bold">full range of services</span> means
+              <span className="font-bold text-brand-green">full range of services</span> means
               that we see the project{" "}
-              <span className="font-bold">all the way through</span>.
+              <span className="font-bold text-brand-green">all the way through</span>.
             </p>
-            <p className="text-base md:text-lg font-serif text-[#003527]">
+            <p className="text-base md:text-lg font-serif text-neutral-700">
               From the initial concept to scheduled maintenance as it matures,
               our comprehensive approach enables you, the customer, to relax and
               enjoy the process while we handle every aspect of the project.
