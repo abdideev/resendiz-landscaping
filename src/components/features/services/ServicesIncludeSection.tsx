@@ -28,12 +28,12 @@ export function ServicesIncludeSection() {
           onMouseLeave={() => setIsPaused(false)}
         >
           {/* Lado izquierdo: lista de servicios */}
-          <div className="bg-[#1B1B1B] p-10 md:p-14 flex flex-col justify-center">
-            <h2 className="text-3xl md:text-5xl font-serif text-[#D4AF37] mb-8">
+          <div className="bg-[#1B1B1B] p-8 md:p-14 flex flex-col justify-center">
+            <h2 className="text-2xl md:text-5xl font-serif text-[#D4AF37] mb-6 md:mb-8">
               Our Services Include
             </h2>
 
-            <ul className="space-y-3">
+            <ul className="space-y-2 md:space-y-3">
               {SERVICES_INCLUDE.map((service, index) => {
                 const isActive = index === activeIndex;
 
@@ -43,11 +43,12 @@ export function ServicesIncludeSection() {
                       type="button"
                       onClick={() => setActiveIndex(index)}
                       className={`
-                        text-left font-serif text-lg md:text-2xl pl-16
+                        text-left font-serif text-lg md:text-2xl
+                        pl-0 md:pl-16
                         transition-all duration-500 ease-out
                         ${
                           isActive
-                            ? "text-[#D4AF37] translate-x-2"
+                            ? "text-[#D4AF37] md:translate-x-2"
                             : "text-white/70 hover:text-white"
                         }
                       `}
