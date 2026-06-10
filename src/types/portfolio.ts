@@ -3,4 +3,7 @@ export interface PortfolioItem {
     title: string;
     service: string;
     image: string;
+    beforeImage: string;
+    afterImage: string;
+    gallery ?: string[];
 }
