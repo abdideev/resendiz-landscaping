@@ -30,3 +30,14 @@ export const ESTIMATE_PROPERTY_SIZES: readonly EstimatePropertySize[] = [
     icon: "Pencil",
   },
 ] as const;
+
+// src/constants/estimate.ts  (agregar)
+import type { EstimateServiceArea } from "@/types/estimate";
+
+export const ESTIMATE_AREAS: readonly EstimateServiceArea[] = [
+  { id: "leesburg", name: "Leesburg" },
+  { id: "waterford", name: "Waterford" },
+  { id: "lovettsville", name: "Lovettsville" },
+  { id: "purcellville", name: "Purcellville" },
+  { id: "hamilton", name: "Hamilton" },
+] as const;

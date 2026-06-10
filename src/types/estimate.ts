@@ -19,3 +19,15 @@ export interface EstimatePropertySize {
   description: string;
   icon: string;
 }
+
+export type ServiceArea =
+  | "leesburg"
+  | "waterford"
+  | "lovettsville"
+  | "purcellville"
+  | "hamilton";
+
+export interface EstimateServiceArea {
+  id: ServiceArea;
+  name: string;
+}
