@@ -37,7 +37,6 @@ export function IntroductionSection() {
               <span className="font-bold text-brand-green">
                 all the way through
               </span>
-              .
             </p>
             <p className="text-base md:text-lg font-serif text-neutral-700">
               From the initial concept to scheduled maintenance as it matures,
