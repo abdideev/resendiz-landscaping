@@ -5,6 +5,7 @@ import { useRouter, notFound } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
 import { ComparisonSlider } from "@/components/ui/ComparisonSlider";
 import { PORTFOLIO_PROJECTS } from "@/constants/portfolio";
+import { ProjectsGallerySection } from "@/components/features/portfolio/ProjectsGallerySection";
 
 export default function ProjectDetailsPage({
   params,
@@ -61,6 +62,8 @@ export default function ProjectDetailsPage({
       <div className="max-w-6xl mx-auto px-6 md:px-12">
         <section id="gallery-section" />
       </div>
+
+      <ProjectsGallerySection />
     </main>
   );
 }
