@@ -23,7 +23,7 @@ export function ServicesIncludeSection() {
     >
       <div className="max-w-6xl mx-auto">
         <div
-          className="grid grid-cols-1 md:grid-cols-2 rounded-lg overflow-hidden shadow-xl"
+          className="grid grid-cols-1 md:grid-cols-2 rounded-none overflow-hidden shadow-xl"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >

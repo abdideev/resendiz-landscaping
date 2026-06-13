@@ -18,7 +18,7 @@ export function IntroductionSection() {
         <div className="max-w-2xl w-full h-px bg-gray-300 my-10 md:my-16 mx-auto" />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-full mx-auto text-left">
-          <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden shadow-lg">
+          <div className="relative w-full aspect-[4/3] rounded-none overflow-hidden shadow-lg">
             <Image
               src="/images/services.webp"
               alt="Landscaping services preview"
@@ -30,9 +30,14 @@ export function IntroductionSection() {
           <div className="flex flex-col justify-center gap-6 md:gap-10">
             <p className="font-serif text-2xl md:text-4xl font-normal leading-tight text-[#003527] text-bg-black">
               Providing a{" "}
-              <span className="font-bold text-brand-green">full range of services</span> means
-              that we see the project{" "}
-              <span className="font-bold text-brand-green">all the way through</span>.
+              <span className="font-bold text-brand-green">
+                full range of services
+              </span>{" "}
+              means that we see the project{" "}
+              <span className="font-bold text-brand-green">
+                all the way through
+              </span>
+              .
             </p>
             <p className="text-base md:text-lg font-serif text-neutral-700">
               From the initial concept to scheduled maintenance as it matures,
