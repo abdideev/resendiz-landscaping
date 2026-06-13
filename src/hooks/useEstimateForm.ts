@@ -50,16 +50,16 @@ export function useEstimateForm() {
     if (!isReadyToSubmit) return null;
 
     const message = [
-      `${EMOJI.leaf} *New Estimate Request* ${EMOJI.leaf}`,
+      "*New Estimate Request*",
       "",
       "Hi! I'd like to request a free estimate for the following:",
       "",
-      `${EMOJI.tools} *Service:* ${selectedServiceName}`,
-      `${EMOJI.ruler} *Property Size:* ${selectedSizeName}`,
-      `${EMOJI.pin} *Area:* ${selectedAreaName}`,
-      measurements ? `${EMOJI.triangle} *Measurements:* ${measurements}` : null,
+      `*Service:* ${selectedServiceName}`,
+      `*Property Size:* ${selectedSizeName}`,
+      `*Area:* ${selectedAreaName}`,
+      measurements ? `*Measurements:* ${measurements}` : null,
       "",
-      `Thank you! Looking forward to your response. ${EMOJI.pray}`,
+      "Thank you! Looking forward to your response.",
     ]
       .filter(Boolean)
       .join("\n");
