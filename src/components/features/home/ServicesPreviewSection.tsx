@@ -1,11 +1,19 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "motion/react";
+import { makeFadeUpVariants, defaultViewport } from "@/lib/animation-variants";
+
+const { container, item } = makeFadeUpVariants({ staggerChildren: 0.15 });
+const MotionLink = motion(Link);
 
 export function ServicesPreviewSection() {
   return (
-    <section className="w-full grid grid-cols-1 md:grid-cols-2 gap-3 pt-3 bg-background h-[80vh] min-h-[600px] md:h-[600px]">
-      <Link
-        href="/services"
+    <motion.section variants={container} initial="hidden" whileInView="visible" viewport={defaultViewport} className="w-full grid grid-cols-1 md:grid-cols-2 gap-3 pt-3 bg-background h-[80vh] min-h-[600px] md:h-[600px]">
+      <MotionLink
+        variants={item}
+        href="services"
         className="relative group overflow-hidden h-full flex items-center justify-center cursor-pointer"
         aria-label="Navigate to our services"
       >
@@ -23,9 +31,10 @@ export function ServicesPreviewSection() {
             Our Services
           </h2>
         </div>
-      </Link>
+      </MotionLink>
 
-      <Link
+      <MotionLink
+        variants={item}
         href="portfolio"
         className="relative group overflow-hidden h-full flex items-center justify-center cursor-pointer"
         aria-label="Navigate to our portfolio"
@@ -44,7 +53,7 @@ export function ServicesPreviewSection() {
             View Projects
           </h2>
         </div>
-      </Link>
-    </section>
+      </MotionLink>
+    </motion.section>
   );
 }

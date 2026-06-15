@@ -6,7 +6,7 @@ export type ServiceId =
   | "edging"
   | "aeration-overseeding";
 
-export type PropertySize = "small" | "medium" | "large" | "customize";
+export type PropertySize = "small" | "medium" | "large" | "large-estate" | "customize";
 
 export interface EstimateService {
   id: ServiceId;

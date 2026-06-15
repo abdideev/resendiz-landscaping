@@ -1,5 +1,11 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "motion/react";
+import { makeFadeUpVariants, defaultViewport } from "@/lib/animation-variants";
+
+const { container, item } = makeFadeUpVariants({ staggerChildren: 0.1 });
 
 const socialLinks = [
   {
@@ -26,10 +32,16 @@ const navLinks = [
 
 export function Footer() {
   return (
-    <footer className="w-full bg-bg-black py-16 px-6 md:px-12">
+    <motion.footer
+      variants={container}
+      initial="hidden"
+      whileInView="visible"
+      viewport={defaultViewport}
+      className="w-full bg-bg-black py-16 px-6 md:px-12"
+    >
       <div className="max-w-7xl mx-auto flex flex-col lg:grid lg:grid-cols-3 gap-12 lg:gap-12 lg:items-center">
         {/* Columna Izquierda */}
-        <div className="flex flex-col gap-6 order-1 lg:order-1 items-start">
+        <motion.div variants={item} className="flex flex-col gap-6 order-1 lg:order-1 items-start">
           <Link href="/" className="relative z-50 focus:outline-none">
             <Image
               src="/images/resendiz-landscaping-logo.webp"
@@ -52,10 +64,10 @@ export function Footer() {
               Monday-Saturday 08:00 AM - 17:00 PM
             </p>
           </div>
-        </div>
+        </motion.div>
 
         {/* Columna Derecha */}
-        <div className="flex flex-row justify-start lg:justify-end gap-16 md:gap-24 order-2 lg:order-3 w-full">
+        <motion.div variants={item} className="flex flex-row justify-start lg:justify-end gap-16 md:gap-24 order-2 lg:order-3 w-full">
           <div className="flex flex-col gap-6">
             <h3 className="text-brand-gold-light font-serif font-bold text-xl tracking-wide leading-4 uppercase">
               EXPLORE
@@ -94,17 +106,17 @@ export function Footer() {
               ))}
             </ul>
           </div>
-        </div>
+        </motion.div>
 
         {/* Columna Central */}
-        <div className="flex flex-col lg:flex-row justify-start lg:justify-center text-left lg:text-center order-3 lg:order-2 w-full pt-8 lg:pt-0 border-t border-white/10 lg:border-none mt-2 lg:mt-0">
+        <motion.div variants={item} className="flex flex-col lg:flex-row justify-start lg:justify-center text-left lg:text-center order-3 lg:order-2 w-full pt-8 lg:pt-0 border-t border-white/10 lg:border-none mt-2 lg:mt-0">
           <p className="text-brand-gold-light text-sm font-light font-sans tracking-wide leading-relaxed">
             © 2026 Resendiz Landscaping LLC <br className="block lg:hidden" />
             <span className="hidden lg:inline"> · </span>
             Powered by A&I Software.
           </p>
-        </div>
+        </motion.div>
       </div>
-    </footer>
+    </motion.footer>
   );
 }

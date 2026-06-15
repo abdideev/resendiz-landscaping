@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { X } from "lucide-react";
+import { motion, AnimatePresence } from "motion/react";
 
 const navLinks = [
   { label: "HOME", href: "/" },
@@ -33,67 +34,155 @@ interface FullScreenMenuProps {
 
 export function FullScreenMenu({ isOpen, onClose }: FullScreenMenuProps) {
   return (
-    <div
-      className={`fixed inset-0 z-[100] flex flex-col items-center justify-center bg-brand-black/80 backdrop-blur-md transition-opacity duration-500 ease-in-out ${
-        isOpen
-          ? "opacity-100 pointer-events-auto"
-          : "opacity-0 pointer-events-none"
-      }`}
-    >
-      <button
-        onClick={onClose}
-        aria-label="Close navigation menu"
-        className="absolute top-8 right-6 md:right-12 text-white hover:text-brand-gold-light p-2 transition-colors focus:outline-none"
-      >
-        <X size={40} strokeWidth={1} />
-      </button>
-
-      <nav className="flex flex-col items-center w-full mt-[-5vh]">
-        <ul className="flex flex-col items-center gap-2 md:gap-2 list-none">
-          {navLinks.map((link, i) => (
-            <li key={link.href} className="overflow-hidden">
-              <Link
-                href={link.href}
-                replace
-                onClick={onClose}
-                className="relative inline-block pb-2 font-serif text-5xl md:text-7xl text-white/80 hover:text-white tracking-normal uppercase transition-all duration-300 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-[2px] after:bg-brand-gold-light after:w-0 hover:after:w-full after:transition-all after:duration-300 after:ease-in-out"
-                style={{
-                  transform: isOpen ? "translateY(0)" : "translateY(100%)",
-                  transition: `transform 0.6s cubic-bezier(0.16, 1, 0.3, 1) ${0.1 + i * 0.05}s`,
-                }}
-              >
-                {link.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
-
-        <div
-          className="absolute bottom-12 flex flex-col items-center gap-4 transition-opacity duration-700 delay-300"
-          style={{ opacity: isOpen ? 1 : 0 }}
+    <AnimatePresence>
+      {isOpen && (
+        <motion.div
+          initial={{
+            opacity: 0,
+            scale: 1.04,
+          }}
+          animate={{
+            opacity: 1,
+            scale: 1,
+          }}
+          exit={{
+            opacity: 0,
+            scale: 1.02,
+          }}
+          transition={{
+            duration: 0.45,
+            ease: [0.22, 1, 0.36, 1],
+          }}
+          className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-brand-black/80 backdrop-blur-md"
         >
-          <div className="flex gap-4 md:gap-6 text-brand-gold-light font-serif text-2xl md:text-2xl">
-            {socialLinks.map((social) => (
-              <Link
-                key={social.label}
-                href={social.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-gold-light transition-all duration-300 hover:scale-110 inline-block"
-              >
-                {social.label}
-              </Link>
-            ))}
-          </div>
-
-          <a
-            href="tel:+15719197885"
-            className="text-brand-gold-light hover:text-gold-light font-serif text-3xl md:text-3xl font-bold tracking-normal leading-[48px] transition-all duration-300 hover:scale-110 inline-block mt-2"
+          {/* Close Button */}
+          <motion.button
+            onClick={onClose}
+            aria-label="Close navigation menu"
+            initial={{
+              opacity: 0,
+              rotate: -90,
+              scale: 0.8,
+            }}
+            animate={{
+              opacity: 1,
+              rotate: 0,
+              scale: 1,
+            }}
+            whileHover={{
+              rotate: 90,
+              scale: 1.1,
+            }}
+            whileTap={{
+              scale: 0.9,
+            }}
+            transition={{
+              type: "spring",
+              stiffness: 400,
+              damping: 25,
+            }}
+            className="absolute top-8 right-6 md:right-12 text-white hover:text-brand-gold-light p-2 focus:outline-none"
           >
-            571-919-7885
-          </a>
-        </div>
-      </nav>
-    </div>
+            <X size={40} strokeWidth={1} />
+          </motion.button>
+
+          <nav className="flex flex-col items-center w-full mt-[-5vh]">
+            <ul className="flex flex-col items-center gap-2 list-none">
+              {navLinks.map((link, i) => (
+                <motion.li
+                  key={link.href}
+                  initial={{
+                    opacity: 0,
+                    y: 80,
+                  }}
+                  animate={{
+                    opacity: 1,
+                    y: 0,
+                  }}
+                  transition={{
+                    delay: 0.15 + i * 0.06,
+                    duration: 0.7,
+                    ease: [0.22, 1, 0.36, 1],
+                  }}
+                >
+                  <motion.div
+                    whileHover={{
+                      x: 6,
+                      scale: 1.015,
+                    }}
+                    whileTap={{
+                      scale: 0.98,
+                    }}
+                  >
+                    <Link
+                      href={link.href}
+                      replace
+                      onClick={onClose}
+                      className="relative inline-block pb-2 font-serif text-5xl md:text-7xl text-white/80 hover:text-white uppercase transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-[2px] after:bg-brand-gold-light after:w-0 hover:after:w-full after:transition-all after:duration-300"
+                    >
+                      {link.label}
+                    </Link>
+                  </motion.div>
+                </motion.li>
+              ))}
+            </ul>
+
+            <motion.div
+              initial={{
+                opacity: 0,
+                y: 30,
+              }}
+              animate={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                delay: 0.55,
+                duration: 0.8,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+              className="absolute bottom-12 flex flex-col items-center gap-4"
+            >
+              <div className="flex gap-4 md:gap-6 text-brand-gold-light font-serif text-2xl">
+                {socialLinks.map((social) => (
+                  <motion.div
+                    key={social.label}
+                    whileHover={{
+                      y: -3,
+                      scale: 1.08,
+                    }}
+                    whileTap={{
+                      scale: 0.95,
+                    }}
+                  >
+                    <Link
+                      href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {social.label}
+                    </Link>
+                  </motion.div>
+                ))}
+              </div>
+
+              <motion.a
+                href="tel:+15719197885"
+                whileHover={{
+                  y: -3,
+                  scale: 1.05,
+                }}
+                whileTap={{
+                  scale: 0.95,
+                }}
+                className="text-brand-gold-light font-serif text-3xl font-bold tracking-normal leading-[48px] mt-2"
+              >
+                571-919-7885
+              </motion.a>
+            </motion.div>
+          </nav>
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 }

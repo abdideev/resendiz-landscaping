@@ -1,4 +1,11 @@
+"use client";
+
 import { MapPin } from "lucide-react";
+import { motion } from "motion/react";
+import { makeFadeUpVariants, defaultViewport } from "@/lib/animation-variants";
+
+const { container: leftContainer, item: leftItem } = makeFadeUpVariants({ staggerChildren: 0.12 });
+const { item: rightItem } = makeFadeUpVariants({ delayChildren: 0.1 });
 
 export function ServiceAreasSection() {
   const areas = [
@@ -16,23 +23,28 @@ export function ServiceAreasSection() {
     >
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 items-center">
         {/* Contenido izquierdo */}
-        <div className="flex-1 flex flex-col gap-6">
-          <h3 className="text-brand-gold font-sans font-medium uppercase tracking-[0.2em] leading-3 text-sm md:text-base">
-            Where We Serve
-          </h3>
-          <h2 className="text-brand-green text-5xl lg:text-6xl font-serif leading-[52px]">
-            Proudly Serving Northern Virginia
-          </h2>
-
-          <p className="text-gray-600 text-base leading-6 font-sans">
-            We bring premium landscaping craftsmanship to estates and luxury 
-            residences across Loudoun County&apos;s most prestigious
-            communities.
-          </p>
-        </div>
+        <motion.div variants={leftContainer} initial="hidden" whileInView="visible" viewport={defaultViewport} className="flex-1 flex flex-col gap-6">
+          <motion.div variants={leftItem}>
+            <h3 className="text-brand-gold font-sans font-medium uppercase tracking-[0.2em] leading-3 text-sm md:text-base">
+              Where We Serve
+            </h3>
+          </motion.div>
+          <motion.div variants={leftItem}>
+            <h2 className="text-brand-green text-5xl lg:text-6xl font-serif leading-[52px]">
+              Proudly Serving Northern Virginia
+            </h2>
+          </motion.div>
+          <motion.div variants={leftItem}>
+            <p className="text-gray-600 text-base leading-6 font-sans">
+              We bring premium landscaping craftsmanship to estates and luxury 
+              residences across Loudoun County&apos;s most prestigious
+              communities.
+            </p>
+          </motion.div>
+        </motion.div>
 
         {/* Contenido derecho */}
-        <div className="w-full max-w-[520px] justify-self-end bg-white rounded-sm border border-gray-100 p-10 shadow-md">
+        <motion.div variants={rightItem} initial="hidden" whileInView="visible" viewport={defaultViewport} className="w-full max-w-[520px] justify-self-end bg-white rounded-sm border border-gray-100 p-10 shadow-md">
           {areas.map((area, index) => {
             return (
               <div key={area}>
@@ -52,7 +64,7 @@ export function ServiceAreasSection() {
               </div>
             );
           })}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
