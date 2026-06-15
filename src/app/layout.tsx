@@ -24,6 +24,11 @@ export const metadata: Metadata = {
   title: "Resendiz Landscaping LLC | Premium Lawn Care in VA",
   description:
     "Professional landscaping, mulch, lawn maintenance, and cleanups in Northern Virginia.",
+
+  robots: {
+    index: false,
+    follow: false,
+  }
 };
 
 export default function RootLayout({
