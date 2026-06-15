@@ -1,7 +1,13 @@
+"use client";
+
+import { motion } from "motion/react";
+import { makeFadeUpVariants, defaultViewport } from "@/lib/animation-variants";
 import { cn } from "@/lib/utils";
 import { Marquee } from "@/components/ui/marquee";
 import { TESTIMONIALS as testimonials } from "@/constants/testimonials";
-import { User } from "lucide-react"; 
+import { User } from "lucide-react";
+
+const { item } = makeFadeUpVariants();
 
 const review = testimonials;
 const firstRow = testimonials.slice(0, testimonials.length / 2);
@@ -52,10 +58,33 @@ export function TestimonialSection() {
       id="reviews"
       className="w-full bg-background py-20 md:py-32 px-4 md:px-12 flex flex-col items-center"
     >
-      <h3 className="text-brand-gold font-sans font-medium tracking-[2.40px] leading-3 uppercase text-sm md:text-base mb-12 md:mb-16 text-center">
+      <motion.h3
+        variants={item}
+        initial="hidden"
+        whileInView="visible"
+        viewport={defaultViewport}
+        className="text-brand-gold font-sans font-medium tracking-[2.40px] leading-3 uppercase text-sm md:text-base mb-12 md:mb-16 text-center"
+      >
         Client Testimonials
-      </h3>
-      <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
+      </motion.h3>
+      <motion.div
+        initial={{
+          opacity: 0,
+          y: 60,
+          scale: 0.98,
+        }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          scale: 1,
+        }}
+        viewport={defaultViewport}
+        transition={{
+          duration: 1,
+          ease: [0.22, 1, 0.36, 1],
+        }}
+        className="relative flex w-full flex-col items-center justify-center overflow-hidden"
+      >
         <Marquee pauseOnHover className="[--duration:50s]">
           {firstRow.map((review) => (
             <ReviewCard key={review.id} {...review} />
@@ -68,7 +97,7 @@ export function TestimonialSection() {
         </Marquee>
         <div className="from-background pointer-events-none absolute inset-y-0 left-0 w-8 md:w-48 bg-gradient-to-r"></div>
         <div className="from-background pointer-events-none absolute inset-y-0 right-0 w-8 md:w-48 bg-gradient-to-l"></div>
-      </div>
+      </motion.div>
     </section>
   );
 }

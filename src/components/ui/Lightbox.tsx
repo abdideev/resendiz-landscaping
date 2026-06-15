@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import Image from "next/image";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import { motion, AnimatePresence } from "motion/react";
 import type { GalleryImage } from "@/types/gallery";
 
 interface LightboxProps {
@@ -22,10 +23,14 @@ export function Lightbox({
   onPrev,
 }: LightboxProps) {
   const [mounted, setMounted] = useState(false);
-  useEffect(() => setMounted(true), []);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     if (currentIndex === null) return;
+
     document.body.style.overflow = "hidden";
 
     const handleKey = (e: KeyboardEvent) => {
@@ -33,6 +38,7 @@ export function Lightbox({
       if (e.key === "ArrowRight") onNext();
       if (e.key === "ArrowLeft") onPrev();
     };
+
     window.addEventListener("keydown", handleKey);
 
     return () => {
@@ -47,61 +53,154 @@ export function Lightbox({
 
   const modalContent = (
     <div
-      className="fixed inset-0 z-9999 flex items-center justify-center p-4"
+      className="fixed inset-0 z-[999999] flex items-center justify-center p-4"
       onClick={onClose}
     >
-      <div className="absolute inset-0 bg-black/70 backdrop-blur-md" />
+      {/* Backdrop */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.3 }}
+        className="absolute inset-0 bg-black/80 backdrop-blur-sm"
+      />
 
-      <button
+      {/* Close Button */}
+      <motion.button
         type="button"
         onClick={onClose}
         aria-label="Close"
-        className="absolute top-24 right-4 md:top-28 md:right-6 z-20 p-2 rounded-full bg-black/50 text-white hover:bg-black/70 transition-colors"
+        whileHover={{
+          scale: 1.08,
+          rotate: 90,
+        }}
+        whileTap={{
+          scale: 0.95,
+        }}
+        transition={{
+          type: "spring",
+          stiffness: 400,
+          damping: 20,
+        }}
+        className="absolute top-6 right-6 md:top-8 md:right-8 z-20 p-2 rounded-full bg-black/50 text-white hover:bg-black/70"
       >
-        <X className="w-7 h-7" />
-      </button>
+        <X className="w-7 h-7 md:w-8 md:h-8" />
+      </motion.button>
 
-      <button
+      {/* Previous Button */}
+      <motion.button
         type="button"
         onClick={(e) => {
           e.stopPropagation();
           onPrev();
         }}
         aria-label="Previous image"
-        className="absolute left-2 md:left-6 z-20 p-2 text-white/80 hover:text-white transition-colors"
+        whileHover={{
+          scale: 1.12,
+          x: -4,
+        }}
+        whileTap={{
+          scale: 0.95,
+        }}
+        transition={{
+          type: "spring",
+          stiffness: 400,
+          damping: 25,
+        }}
+        className="absolute top-1/2 -translate-y-1/2 left-2 md:left-6 z-20 p-2 text-white/50 hover:text-white"
       >
-        <ChevronLeft className="w-8 h-8 md:w-10 md:h-10" />
-      </button>
+        <ChevronLeft className="w-10 h-10 md:w-12 md:h-12" />
+      </motion.button>
 
-      <div
-        className="relative z-10 w-full max-w-4xl max-h-[80vh] aspect-[4/3]"
+      {/* Content */}
+      <motion.div
+        initial={{
+          opacity: 0,
+          scale: 0.96,
+        }}
+        animate={{
+          opacity: 1,
+          scale: 1,
+        }}
+        transition={{
+          duration: 0.4,
+          ease: [0.22, 1, 0.36, 1],
+        }}
+        className="relative z-10 flex flex-col items-center justify-center w-full max-w-6xl h-[85vh]"
         onClick={(e) => e.stopPropagation()}
       >
-        <Image
-          src={image.src}
-          alt={image.alt}
-          fill
-          sizes="(max-width: 768px) 100vw, 80vw"
-          className="object-contain"
-        />
-        {image.caption && (
-          <p className="absolute -bottom-8 left-0 right-0 text-center text-white/80 text-sm">
-            {image.caption}
-          </p>
-        )}
-      </div>
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={image.src}
+            initial={{
+              opacity: 0,
+              scale: 0.95,
+              y: 20,
+            }}
+            animate={{
+              opacity: 1,
+              scale: 1,
+              y: 0,
+            }}
+            exit={{
+              opacity: 0,
+              scale: 0.97,
+            }}
+            transition={{
+              duration: 0.35,
+              ease: [0.22, 1, 0.36, 1],
+            }}
+            className="relative w-full h-full"
+          >
+            <Image
+              src={image.src}
+              alt={image.alt}
+              fill
+              sizes="(max-width: 768px) 100vw, 90vw"
+              className="object-contain"
+            />
+          </motion.div>
+        </AnimatePresence>
 
-      <button
+        {image.caption && (
+          <motion.p
+            key={image.caption}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.3,
+              delay: 0.1,
+            }}
+            className="text-white/90 font-sans text-sm md:text-sm tracking-widest mt-6 text-center"
+          >
+            {image.caption}
+          </motion.p>
+        )}
+      </motion.div>
+
+      {/* Next Button */}
+      <motion.button
         type="button"
         onClick={(e) => {
           e.stopPropagation();
           onNext();
         }}
         aria-label="Next image"
-        className="absolute right-2 md:right-6 z-20 p-2 text-white/80 hover:text-white transition-colors"
+        whileHover={{
+          scale: 1.12,
+          x: 4,
+        }}
+        whileTap={{
+          scale: 0.95,
+        }}
+        transition={{
+          type: "spring",
+          stiffness: 400,
+          damping: 25,
+        }}
+        className="absolute top-1/2 -translate-y-1/2 right-2 md:right-6 z-20 p-2 text-white/50 hover:text-white"
       >
-        <ChevronRight className="w-8 h-8 md:w-10 md:h-10" />
-      </button>
+        <ChevronRight className="w-10 h-10 md:w-12 md:h-12" />
+      </motion.button>
     </div>
   );
 

@@ -1,6 +1,13 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "motion/react";
 import { CONTACT_CTA } from "@/constants/cta";
+import { makeFadeUpVariants, defaultViewport } from "@/lib/animation-variants";
+
+const MotionLink = motion.create(Link);
+const { container, item } = makeFadeUpVariants({ staggerChildren: 0.15 });
 
 export function ContactCtaSection() {
   const {
@@ -30,16 +37,29 @@ export function ContactCtaSection() {
       <div className="absolute inset-0 bg-black/50" />
 
       <div className="relative z-10 w-full max-w-6xl mx-auto px-4 md:px-8 lg:px-12">
-        <div className="max-w-xl">
-          <h2 className="text-2xl sm:text-3xl md:text-5xl font-serif text-white mb-6 leading-tight">
+        <motion.div
+          variants={container}
+          initial="hidden"
+          whileInView="visible"
+          viewport={defaultViewport}
+          className="max-w-xl"
+        >
+          <motion.h2
+            variants={item}
+            className="text-2xl sm:text-3xl md:text-5xl font-serif text-white mb-6 leading-tight"
+          >
             {title}
-          </h2>
+          </motion.h2>
 
-          <p className="text-base md:text-lg text-white/90 mb-10 leading-relaxed">
+          <motion.p
+            variants={item}
+            className="text-base md:text-lg text-white/90 mb-10 leading-relaxed"
+          >
             {description}
-          </p>
+          </motion.p>
 
-          <Link
+          <MotionLink
+            variants={item}
             href={buttonHref}
             className="
               inline-block w-full sm:w-auto text-center
@@ -50,8 +70,8 @@ export function ContactCtaSection() {
             "
           >
             {buttonLabel}
-          </Link>
-        </div>
+          </MotionLink>
+        </motion.div>
       </div>
     </section>
   );

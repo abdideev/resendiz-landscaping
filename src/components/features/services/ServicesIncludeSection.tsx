@@ -2,8 +2,12 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { motion } from "motion/react";
 import { SERVICES_INCLUDE } from "@/constants/services-include";
 import { useAutoCarousel } from "@/hooks/useAutoCarousel";
+import { makeFadeUpVariants, defaultViewport } from "@/lib/animation-variants";
+
+const { item } = makeFadeUpVariants();
 
 export function ServicesIncludeSection() {
   const [isPaused, setIsPaused] = useState(false);
@@ -22,7 +26,11 @@ export function ServicesIncludeSection() {
       className="relative w-full py-20 px-4 md:px-8 lg:px-12 bg-brand-cream"
     >
       <div className="max-w-6xl mx-auto">
-        <div
+        <motion.div
+          variants={item}
+          initial="hidden"
+          whileInView="visible"
+          viewport={defaultViewport}
           className="grid grid-cols-1 md:grid-cols-2 rounded-none overflow-hidden shadow-xl"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
@@ -78,7 +86,7 @@ export function ServicesIncludeSection() {
               />
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

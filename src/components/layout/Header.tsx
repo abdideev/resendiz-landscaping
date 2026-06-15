@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState, useCallback } from "react";
 import { Menu } from "lucide-react";
 import Image from "next/image";
+import { motion } from "motion/react";
 import { FullScreenMenu } from "./FullScreenMenu";
 
 export function Header() {
@@ -15,9 +16,14 @@ export function Header() {
   }, []);
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("scroll", handleScroll, {
+      passive: true,
+    });
+
     handleScroll();
-    return () => window.removeEventListener("scroll", handleScroll);
+
+    return () =>
+      window.removeEventListener("scroll", handleScroll);
   }, [handleScroll]);
 
   useEffect(() => {
@@ -26,6 +32,7 @@ export function Header() {
     } else {
       document.body.style.overflow = "";
     }
+
     return () => {
       document.body.style.overflow = "";
     };
@@ -36,11 +43,14 @@ export function Header() {
       <header
         className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-12 h-24 transition-all duration-500 ease-in-out ${
           scrolled
-            ? " bg-[#F5F6F0]/10 backdrop-blur-sm border-b border-[#F5F6F0]/20"
+            ? "bg-[#F5F6F0]/10 backdrop-blur-sm border-b border-[#F5F6F0]/20"
             : "bg-transparent border-b border-white/0"
         }`}
       >
-        <Link href="/" className="relative z-50 focus:outline-none">
+        <Link
+          href="/"
+          className="relative z-50 focus:outline-none"
+        >
           <Image
             src="/images/resendiz-landscaping-logo.webp"
             alt="Resendiz Landscaping"
@@ -51,15 +61,36 @@ export function Header() {
           />
         </Link>
 
-        <button
+        <motion.button
           onClick={() => setMenuOpen(true)}
+          animate={{
+            opacity: menuOpen ? 0 : 1,
+            scale: menuOpen ? 0.8 : 1,
+            pointerEvents: menuOpen ? "none" : "auto",
+          }}
+          whileHover={{
+            scale: 1.05,
+            y: -1,
+          }}
+          whileTap={{
+            scale: 0.92,
+          }}
+          transition={{
+            type: "spring",
+            stiffness: 400,
+            damping: 25,
+          }}
           aria-label="Open navigation menu"
-          className="text-white bg-brand-gold rounded-sm p-2 transition-transform hover:scale-105 focus:outline-none"
+          className="text-white bg-brand-gold rounded-sm p-2 focus:outline-none"
         >
           <Menu size={32} strokeWidth={2} />
-        </button>
+        </motion.button>
       </header>
-      <FullScreenMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
+
+      <FullScreenMenu
+        isOpen={menuOpen}
+        onClose={() => setMenuOpen(false)}
+      />
     </>
   );
 }
