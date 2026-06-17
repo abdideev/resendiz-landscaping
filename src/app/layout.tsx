@@ -21,14 +21,53 @@ const scheherazade = Scheherazade_New({
 });
 
 export const metadata: Metadata = {
-  title: "Resendiz Landscaping LLC | Premium Lawn Care in VA",
+  title: {
+    default: "Resendiz Landscaping | Premium Lawn Care in VA",
+    template: "%s | Resendiz Landscaping LLC",
+  },
   description:
     "Professional landscaping, mulch, lawn maintenance, and cleanups in Northern Virginia.",
+
+  keywords: [
+    "landscaping",
+    "lawn care",
+    "mulch",
+    "lawn maintenance",
+    "Northern Virginia",
+    "VA",
+    "cleanups",
+  ],
 
   robots: {
     index: false,
     follow: false,
-  }
+  },
+
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://www.resendiz-landscaping.com/",
+    title: "Resendiz Landscaping LLC | Premium Lawn Care in VA",
+    description:
+      "Professional landscaping, mulch, lawn maintenance, and cleanups in Northern Virginia.",
+    siteName: "Resendiz Landscaping LLC",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Resendiz Landscaping LLC Services",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Resendiz Landscaping LLC | Premium Lawn Care in VA",
+    description:
+      "Professional landscaping, mulch, lawn maintenance, and cleanups in Northern Virginia.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({

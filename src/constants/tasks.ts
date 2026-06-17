@@ -21,6 +21,6 @@ export const TASK_PILLARS: readonly TaskPillar[] = [
     icon: Leaf,
     title: "Maintain",
     description:
-      "We offer full-service landscape maintenance including lawn, plant, and tree care, as well as lighting, irrigation, and pool maintenance.",
+      "We offer full-service landscape maintenance, including lawn, plant, and tree care, as well as landscape lighting and irrigation system maintenance.",
   },
 ] as const;
