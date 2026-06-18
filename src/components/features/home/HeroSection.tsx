@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 import { heroVariants } from "@/lib/animation-variants";
 
 export function HeroSection() {
-  const MotionLink = motion(Link);
+  const MotionLink = motion.create(Link);
 
   return (
     <section

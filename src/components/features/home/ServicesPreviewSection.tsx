@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 import { makeFadeUpVariants, defaultViewport } from "@/lib/animation-variants";
 
 const { container, item } = makeFadeUpVariants({ staggerChildren: 0.15 });
-const MotionLink = motion(Link);
+const MotionLink = motion.create(Link);
 
 export function ServicesPreviewSection() {
   return (
@@ -23,6 +23,7 @@ export function ServicesPreviewSection() {
           fill
           className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
           quality={75}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
         <div className="absolute inset-0 bg-black/60 transition-colors duration-500 group-hover:bg-black/30 backdrop-blur-[0.8px]" />
 
@@ -45,6 +46,7 @@ export function ServicesPreviewSection() {
           fill
           className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
           quality={75}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
         <div className="absolute inset-0 bg-black/60 transition-colors duration-500 group-hover:bg-black/30 backdrop-blur-[0.8px]" />
 

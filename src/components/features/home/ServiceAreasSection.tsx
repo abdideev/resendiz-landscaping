@@ -53,9 +53,9 @@ export function ServiceAreasSection() {
                     className="w-5 h-5 text-brand-gold-light flex-shrink-0"
                     strokeWidth={2}
                   />
-                  <h2 className="text-black text-3xl font-medium font-serif transition-all duration-300 hover:scale-105 cursor-default">
+                  <h3 className="text-black text-3xl font-medium font-serif transition-all duration-300 hover:scale-105 cursor-default">
                     {area}
-                  </h2>
+                  </h3>
                 </div>
 
                 {index !== areas.length - 1 && (

@@ -58,7 +58,7 @@ export function TestimonialSection() {
       id="reviews"
       className="w-full bg-background py-20 md:py-32 px-4 md:px-12 flex flex-col items-center"
     >
-      <motion.h3
+      <motion.h2
         variants={item}
         initial="hidden"
         whileInView="visible"
@@ -66,7 +66,7 @@ export function TestimonialSection() {
         className="text-brand-gold font-sans font-medium tracking-[2.40px] leading-3 uppercase text-sm md:text-base mb-12 md:mb-16 text-center"
       >
         Client Testimonials
-      </motion.h3>
+      </motion.h2>
       <motion.div
         initial={{
           opacity: 0,

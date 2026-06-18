@@ -21,6 +21,7 @@ const scheherazade = Scheherazade_New({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.resendiz-landscaping.com"),
   title: {
     default: "Resendiz Landscaping | Premium Lawn Care in VA",
     template: "%s | Resendiz Landscaping LLC",
