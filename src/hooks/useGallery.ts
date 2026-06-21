@@ -1,8 +1,9 @@
 import { useState, useCallback } from "react";
-import { GALLERY_IMAGES, GALLERY_VISIBLE_COUNT } from "@/constants/gallery";
+import { GALLERY_VISIBLE_COUNT } from "@/constants/gallery";
+import type { GalleryImage } from "@/types/gallery";
 
-export function useGallery() {
-  const total = GALLERY_IMAGES.length;
+export function useGallery(images: readonly GalleryImage[]) {
+  const total = images.length;
   const hasArrows = total > GALLERY_VISIBLE_COUNT;
   const maxStart = Math.max(0, total - GALLERY_VISIBLE_COUNT);
 
