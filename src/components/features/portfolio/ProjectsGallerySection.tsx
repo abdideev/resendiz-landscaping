@@ -1,4 +1,3 @@
-// src/components/features/gallery/ProjectsGallerySection.tsx
 "use client";
 
 import Image from "next/image";
@@ -23,15 +22,12 @@ export function ProjectsGallerySection() {
     lightboxPrev,
   } = useGallery();
 
-  // Cuánto ancho ocupa cada tarjeta, en %, dependiendo de cuántas se ven
   const cardWidthPercent = 100 / GALLERY_VISIBLE_COUNT;
-  // Cuánto desplazar la fila: una tarjeta por cada paso del índice
   const offsetPercent = startIndex * cardWidthPercent;
 
   return (
     <div className="w-full max-w-6xl mx-auto px-4 mt-16">
       <div className="relative">
-        {/* Ventana: muestra solo el ancho de N tarjetas y recorta el resto */}
         <div className="overflow-hidden">
           <motion.div
             className="flex"
@@ -63,7 +59,6 @@ export function ProjectsGallerySection() {
           </motion.div>
         </div>
 
-        {/* Flechas centradas a los lados */}
         {hasArrows && (
           <button
             type="button"

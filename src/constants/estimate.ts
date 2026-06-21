@@ -1,4 +1,5 @@
 import type { EstimatePropertySize, EstimateService } from "@/types/estimate";
+import type { EstimateServiceArea } from "@/types/estimate";
 
 export const ESTIMATE_SERVICES: readonly EstimateService[] = [
   { id: "mulch", name: "Mulch" },
@@ -30,9 +31,6 @@ export const ESTIMATE_PROPERTY_SIZES: readonly EstimatePropertySize[] = [
     icon: "Pencil",
   },
 ] as const;
-
-// src/constants/estimate.ts  (agregar)
-import type { EstimateServiceArea } from "@/types/estimate";
 
 export const ESTIMATE_AREAS: readonly EstimateServiceArea[] = [
   { id: "leesburg", name: "Leesburg" },

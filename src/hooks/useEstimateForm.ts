@@ -1,4 +1,3 @@
-// src/hooks/useEstimateForm.ts
 import { useState, useMemo } from "react";
 import type { ServiceId, PropertySize, ServiceArea } from "@/types/estimate";
 import {
@@ -8,7 +7,6 @@ import {
 } from "@/constants/estimate";
 import { CONTACT } from "@/constants/contact";
 
-// Arriba del hook, fuera de la función
 const EMOJI = {
   leaf: String.fromCodePoint(0x1f33f), // 🌿
   tools: String.fromCodePoint(0x1f6e0, 0xfe0f), // 🛠️
@@ -42,7 +40,6 @@ export function useEstimateForm() {
     [selectedArea],
   );
 
-  // Ahora también requiere la localidad para poder enviar
   const isReadyToSubmit =
     selectedService !== null && selectedSize !== null && selectedArea !== null;
 

@@ -1,4 +1,3 @@
-// src/hooks/useGallery.ts
 import { useState, useCallback } from "react";
 import { GALLERY_IMAGES, GALLERY_VISIBLE_COUNT } from "@/constants/gallery";
 

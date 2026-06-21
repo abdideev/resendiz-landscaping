@@ -1,4 +1,3 @@
-// src/constants/cta.ts
 import type { ContactCta } from "@/types/cta";
 
 export const CONTACT_CTA: ContactCta = {

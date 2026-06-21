@@ -69,7 +69,6 @@ export function ServicesIncludeSection() {
             </ul>
           </div>
 
-          {/* Lado derecho: imagen que cambia con fade */}
           <div className="relative aspect-square md:aspect-auto md:min-h-[480px]">
             {SERVICES_INCLUDE.map((service, index) => (
               <Image
