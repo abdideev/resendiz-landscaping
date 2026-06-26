@@ -7,5 +7,5 @@ export interface PortfolioItem {
   image: string;
   beforeImage: string;
   afterImage: string;
-  gallery: GalleryImage[];
+  gallery?: GalleryImage[];
 }

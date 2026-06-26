@@ -8,6 +8,8 @@ import { PortfolioItem } from "@/types/portfolio";
 interface ProjectCardProps {
   project: PortfolioItem;
   cardVariants: Variants;
+  /** Página actual del listado (1-indexed), para poder volver al mismo lugar */
+  fromPage?: number;
 }
 
 const textContentVariants: Variants = {
@@ -15,20 +17,22 @@ const textContentVariants: Variants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: {
-      duration: 0.45,
-      ease: "easeOut",
-    },
+    transition: { duration: 0.45, ease: "easeOut" },
   },
 };
 
 const MotionLink = motion.create(Link);
 
-export function ProjectCard({ project, cardVariants }: ProjectCardProps) {
+export function ProjectCard({ project, cardVariants, fromPage }: ProjectCardProps) {
+  const href =
+    fromPage && fromPage > 1
+      ? `/portfolio/${project.id}?from=${fromPage}`
+      : `/portfolio/${project.id}`;
+
   return (
     <MotionLink
       key={project.id}
-      href={`/portfolio/${project.id}`}
+      href={href}
       variants={cardVariants}
       transition={{ type: "spring", stiffness: 400, damping: 25 }}
       style={{ willChange: "transform" }}
