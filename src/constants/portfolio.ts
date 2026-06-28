@@ -383,7 +383,7 @@ export const PORTFOLIO_PROJECTS: PortfolioItem[] = [
   },
   {
     id: "premium-leaf-mulch-installation-leesburg-va",
-    title: "Leesburg, VA Brau",
+    title: "Leesburg, VA",
     service: "Premium Leaf Mulch Installation",
     image:
       "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/premium-leaf-mulch-installation-leesburg-va/premium-leaf-mulch-installation-leesburg-va-02.webp",
