@@ -381,4 +381,399 @@ export const PORTFOLIO_PROJECTS: PortfolioItem[] = [
       },
     ],
   },
+  {
+    id: "premium-leaf-mulch-installation-leesburg-va",
+    title: "Leesburg, VA Brau",
+    service: "Premium Leaf Mulch Installation",
+    image:
+      "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/premium-leaf-mulch-installation-leesburg-va/premium-leaf-mulch-installation-leesburg-va-02.webp",
+    beforeImage:
+      "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/premium-leaf-mulch-installation-leesburg-va/premium-leaf-mulch-installation-leesburg-va-01.webp",
+    afterImage:
+      "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/premium-leaf-mulch-installation-leesburg-va/premium-leaf-mulch-installation-leesburg-va-03.webp",
+    gallery: [
+      {
+        id: "premium-leaf-mulch-installation-leesburg-va-04",
+        src: "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/premium-leaf-mulch-installation-leesburg-va/premium-leaf-mulch-installation-leesburg-va-04.webp",
+        alt: "Close-up of premium leaf mulch installation in Leesburg, VA.",
+        caption: "Custom Stone Drainage & Mulching — Leesburg",
+      },
+    ],
+  },
+  {
+    id: "red-mulch-installation-purcellville-va",
+    title: "Purcellville, VA",
+    service: "Red Mulch Installation",
+    image:
+      "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/red-mulch-installation-purcellville-va/red-mulch-installation-purcellville-va-02.webp",
+    beforeImage:
+      "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/red-mulch-installation-purcellville-va/red-mulch-installation-purcellville-va-01.webp",
+    afterImage:
+      "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/red-mulch-installation-purcellville-va/red-mulch-installation-purcellville-va-01.webp",
+    gallery: [],
+  },
+  {
+    id: "rush-clearing-&-property-cleanup-leesburg-va",
+    title: "Leesburg, VA",
+    service: "Rush Clearing & Property Cleanup",
+    image:
+      "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/rush-clearing-&-property-cleanup-leesburg-va/rush-clearing-&-property-cleanup-leesburg-va-03.webp",
+    beforeImage:
+      "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/rush-clearing-&-property-cleanup-leesburg-va/rush-clearing-&-property-cleanup-leesburg-va-05.webp",
+    afterImage:
+      "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/rush-clearing-&-property-cleanup-leesburg-va/rush-clearing-&-property-cleanup-leesburg-va-12.webp",
+    gallery: [
+      {
+        id: "rush-clearing-&-property-cleanup-leesburg-va-gallery-01",
+        src: "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/rush-clearing-&-property-cleanup-leesburg-va/rush-clearing-&-property-cleanup-leesburg-va-01.webp",
+        alt: "Work in progress showing foundation clearing for property cleanup in Leesburg, VA, with landscape fabric installed.",
+        caption: "Foundation Site Prep & Clearing — Leesburg",
+      },
+      {
+        id: "rush-clearing-&-property-cleanup-leesburg-va-gallery-02",
+        src: "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/rush-clearing-&-property-cleanup-leesburg-va/rush-clearing-&-property-cleanup-leesburg-va-02.webp",
+        alt: "Work in progress showing foundation clearing with landscape fabric and drainage pipe near a chimney in Leesburg, VA.",
+        caption: "Foundation Foundation Area Clearing — Leesburg",
+      },
+      {
+        id: "rush-clearing-&-property-cleanup-leesburg-va-gallery-04",
+        src: "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/rush-clearing-&-property-cleanup-leesburg-va/rush-clearing-&-property-cleanup-leesburg-va-04.webp",
+        alt: "Before picture of a house siding cleanup project in Leesburg, VA, with overgrown ivy on the chimney.",
+        caption: "House Siding Clearing (Before) — Leesburg",
+      },
+      {
+        id: "rush-clearing-&-property-cleanup-leesburg-va-gallery-06",
+        src: "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/rush-clearing-&-property-cleanup-leesburg-va/rush-clearing-&-property-cleanup-leesburg-va-06.webp",
+        alt: "Work in progress of a shed area cleanup project in Leesburg, VA, with bushes cleared.",
+        caption: "Shed Area Clearing (Work in Progress) — Leesburg",
+      },
+      {
+        id: "rush-clearing-&-property-cleanup-leesburg-va-gallery-07",
+        src: "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/rush-clearing-&-property-cleanup-leesburg-va/rush-clearing-&-property-cleanup-leesburg-va-07.webp",
+        alt: "Before picture of an overgrown shed surrounded by dense weeds and branches in Leesburg, VA.",
+        caption: "Shed Area Clearing (Before) — Leesburg",
+      },
+      {
+        id: "rush-clearing-&-property-cleanup-leesburg-va-gallery-08",
+        src: "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/rush-clearing-&-property-cleanup-leesburg-va/rush-clearing-&-property-cleanup-leesburg-va-08.webp",
+        alt: "After picture of the shed area fully cleared of overgrowth with trimmed grass and a clean fence line in Leesburg, VA.",
+        caption: "Shed Area & Fence Line Clearing (After) — Leesburg",
+      },
+      {
+        id: "rush-clearing-&-property-cleanup-leesburg-va-gallery-09",
+        src: "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/rush-clearing-&-property-cleanup-leesburg-va/rush-clearing-&-property-cleanup-leesburg-va-09.webp",
+        alt: "Mid-process backyard cleanup in Leesburg, VA, featuring wheelbarrows and a neatly manicured large shrub next to a wooden deck.",
+        caption: "Backyard Cleaned-Up Beds & Shrub Trimming — Leesburg",
+      },
+      {
+        id: "rush-clearing-&-property-cleanup-leesburg-va-gallery-10",
+        src: "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/rush-clearing-&-property-cleanup-leesburg-va/rush-clearing-&-property-cleanup-leesburg-va-10.webp",
+        alt: "After picture of the house siding and brick chimney area, completely cleared of overgrowth and finished with fresh mulch in Leesburg, VA.",
+        caption: "House Siding & Bed Mulching (After) — Leesburg",
+      },
+      {
+        id: "rush-clearing-&-property-cleanup-leesburg-va-gallery-11",
+        src: "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/rush-clearing-&-property-cleanup-leesburg-va/rush-clearing-&-property-cleanup-leesburg-va-11.webp",
+        alt: "After picture of a clean chain-link fence line and backyard perimeter with all overgrown bushes removed in Leesburg, VA.",
+        caption: "Property Perimeter Fence Clearing (After) — Leesburg",
+      },
+    ],
+  },
+  {
+    id: "shrub-trimming-&-laurel-reduction-waterford-ridge",
+    title: "Waterford Ridge",
+    service: "Shrub Trimming & Laurel Reduction",
+    image:
+      "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/shrub-trimming-&-laurel-reduction-waterford-ridge/shrub-trimming-&-laurel-reduction-waterford-ridge-01.webp",
+    beforeImage:
+      "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/shrub-trimming-&-laurel-reduction-waterford-ridge/shrub-trimming-&-laurel-reduction-waterford-ridge-02.webp",
+    afterImage:
+      "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/shrub-trimming-&-laurel-reduction-waterford-ridge/shrub-trimming-&-laurel-reduction-waterford-ridge-05.webp",
+    gallery: [
+      {
+        id: "shrub-trimming-&-laurel-reduction-waterford-ridge-gallery-1",
+        src: "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/shrub-trimming-&-laurel-reduction-waterford-ridge/shrub-trimming-&-laurel-reduction-waterford-ridge-03.webp",
+        alt: "Work in progress of a laurel reduction and shrub trimming project in Waterford Ridge, featuring a yellow A-frame ladder against a tall hedge.",
+        caption:
+          "Professional Laurel Reduction & Shrub Trimming — Waterford Ridge",
+      },
+    ],
+  },
+  {
+    id: "snow-damage-tree-removal-&-cleanup-waterford-ridge",
+    title: "Waterford Ridge",
+    service: "Snow Damage Tree Removal & Cleanup",
+    image:
+      "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/snow-damage-tree-removal-&-cleanup-waterford-ridge/snow-damage-tree-removal-&-cleanup-waterford-ridge-05.webp",
+    beforeImage:
+      "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/snow-damage-tree-removal-&-cleanup-waterford-ridge/snow-damage-tree-removal-&-cleanup-waterford-ridge-06.webp",
+    afterImage:
+      "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/snow-damage-tree-removal-&-cleanup-waterford-ridge/snow-damage-tree-removal-&-cleanup-waterford-ridge-07.webp",
+    gallery: [
+      {
+        id: "snow-damage-tree-removal-&-cleanup-waterford-ridge-gallery-1",
+        src: "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/snow-damage-tree-removal-&-cleanup-waterford-ridge/snow-damage-tree-removal-&-cleanup-waterford-ridge-01.webp",
+        alt: "Work truck and landscaping trailer parked on a lawn filled with fallen autumn leaves during a foggy tree removal project in Waterford Ridge.",
+        caption: "Emergency Tree Removal & Site Clearing — Waterford Ridge",
+      },
+      {
+        id: "snow-damage-tree-removal-&-cleanup-waterford-ridge-gallery-2",
+        src: "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/snow-damage-tree-removal-&-cleanup-waterford-ridge/snow-damage-tree-removal-&-cleanup-waterford-ridge-02.webp",
+        alt: "A large pile of cut branches and tree debris being processed for clearing in Waterford Ridge.",
+        caption: "Debris Processing & Heavy Brush Clearing — Waterford Ridge",
+      },
+      {
+        id: "snow-damage-tree-removal-&-cleanup-waterford-ridge-gallery-3",
+        src: "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/snow-damage-tree-removal-&-cleanup-waterford-ridge/snow-damage-tree-removal-&-cleanup-waterford-ridge-03.webp",
+        alt: "A landscaping dump trailer fully loaded with tree branches and covered with a tarp during property cleanup in Waterford Ridge.",
+        caption: "Property Hauling & Storm Damage Cleanup — Waterford Ridge",
+      },
+      {
+        id: "snow-damage-tree-removal-&-cleanup-waterford-ridge-gallery-4",
+        src: "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/snow-damage-tree-removal-&-cleanup-waterford-ridge/snow-damage-tree-removal-&-cleanup-waterford-ridge-04.webp",
+        alt: "Low-angle view of a professional climber scaling a tall tree for pruning and storm damage removal against a blue sky in Waterford Ridge.",
+        caption: "Professional Tree Climbing & Pruning — Waterford Ridge",
+      },
+    ],
+  },
+  {
+    id: "sod-installation-round-hill-va",
+    title: "Round Hill",
+    service: "SOD Installation",
+    image:
+      "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/sod-installation-round-hill-va/sod-installation-round-hill-va-02.webp",
+    beforeImage:
+      "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/sod-installation-round-hill-va/sod-installation-round-hill-va-01.webp",
+    afterImage:
+      "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/sod-installation-round-hill-va/sod-installation-round-hill-va-05.webp",
+    gallery: [
+      {
+        id: "sod-installation-round-hill-va-gallery-3",
+        src: "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/sod-installation-round-hill-va/sod-installation-round-hill-va-03.webp",
+        alt: "Work in progress of a large backyard sod installation project in Round Hill, VA, with wheelbarrows on the newly laid turf near a wooded perimeter.",
+        caption: "Large Scale Sod Installation & Site Prep — Round Hill",
+      },
+      {
+        id: "sod-installation-round-hill-va-gallery-4",
+        src: "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/sod-installation-round-hill-va/sod-installation-round-hill-va-04.webp",
+        alt: "Landscaping team grading soil and preparing the lawn surface during a sod installation project in Round Hill, VA.",
+        caption: "Lawn Grading & Sod Groundwork — Round Hill",
+      },
+      {
+        id: "sod-installation-round-hill-va-gallery-6",
+        src: "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/sod-installation-round-hill-va/sod-installation-round-hill-va-06.webp",
+        alt: "Mid-process view of a sloped backyard being completely covered with fresh green sod rolls next to a wooden fence in Round Hill, VA.",
+        caption: "Sloped Yard Turf Transformation — Round Hill",
+      },
+    ],
+  },
+  {
+    id: "spring-cleanup-&-mulch-installation-ashburn-va",
+    title: "Ashburn VA",
+    service: "Spring Cleanup & Mulch Installation",
+    image:
+      "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/spring-cleanup-&-mulch-installation-ashburn-va/spring-cleanup-&-mulch-installation-ashburn-va-02.webp",
+    beforeImage:
+      "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/spring-cleanup-&-mulch-installation-ashburn-va/spring-cleanup-&-mulch-installation-ashburn-va-01.webp",
+    afterImage:
+      "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/spring-cleanup-&-mulch-installation-ashburn-va/spring-cleanup-&-mulch-installation-ashburn-va-07.webp",
+    gallery: [
+      {
+        id: "spring-cleanup-&-mulch-installation-ashburn-va-gallery-3",
+        src: "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/spring-cleanup-&-mulch-installation-ashburn-va/spring-cleanup-&-mulch-installation-ashburn-va-03.webp",
+        alt: "Bright front yard in Ashburn, VA, showing fresh mulch layers applied to landscape beds in front of a house on a sunny day.",
+        caption: "Premium Landscape Bed Mulching — Ashburn",
+      },
+      {
+        id: "spring-cleanup-&-mulch-installation-ashburn-va-gallery-4",
+        src: "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/spring-cleanup-&-mulch-installation-ashburn-va/spring-cleanup-&-mulch-installation-ashburn-va-04.webp",
+        alt: "Landscaping professional loading hedge trimmings and green debris into a dump trailer during a spring cleanup in Ashburn, VA.",
+        caption: "Hedge Trimming & Yard Debris Hauling — Ashburn",
+      },
+      {
+        id: "spring-cleanup-&-mulch-installation-ashburn-va-gallery-5",
+        src: "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/spring-cleanup-&-mulch-installation-ashburn-va/spring-cleanup-&-mulch-installation-ashburn-va-05.webp",
+        alt: "A manicured side yard with clean stone borders, trimmed shrubs, and fresh black mulch near a residential porch in Ashburn, VA.",
+        caption: "Front Garden Bed Maintenance & Mulching — Ashburn",
+      },
+      {
+        id: "spring-cleanup-&-mulch-installation-ashburn-va-gallery-6",
+        src: "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/spring-cleanup-&-mulch-installation-ashburn-va/spring-cleanup-&-mulch-installation-ashburn-va-06.webp",
+        alt: "Nicely edged and freshly mulched landscape beds containing trimmed trees and bushes next to a wooden fence gate in Ashburn, VA.",
+        caption: "Property Line Bed Cleanup & Mulching — Ashburn",
+      },
+    ],
+  },
+  {
+    id: "spring-cleanup-&-mulch-installation-hamilton-va",
+    title: "Hamilton, VA",
+    service: "Spring Cleanup & Mulch Installation",
+    image:
+      "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/spring-cleanup-&-mulch-installation-hamilton-va/spring-cleanup-&-mulch-installation-hamilton-va-09.webp",
+    beforeImage:
+      "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/spring-cleanup-&-mulch-installation-hamilton-va/spring-cleanup-&-mulch-installation-hamilton-va-02.webp",
+    afterImage:
+      "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/spring-cleanup-&-mulch-installation-hamilton-va/spring-cleanup-&-mulch-installation-hamilton-va-04.webp",
+    gallery: [
+      {
+        id: "spring-cleanup-&-mulch-installation-hamilton-va-gallery-1",
+        src: "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/spring-cleanup-&-mulch-installation-hamilton-va/spring-cleanup-&-mulch-installation-hamilton-va-01.webp",
+        alt: "A large overgrown green bush sitting on a wide green lawn with tall pine trees in the background under a cloudy sky in Hamilton, VA.",
+        caption: "Property Lawn & Large Shrub Maintenance — Hamilton",
+      },
+      {
+        id: "spring-cleanup-&-mulch-installation-hamilton-va-gallery-3",
+        src: "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/spring-cleanup-&-mulch-installation-hamilton-va/spring-cleanup-&-mulch-installation-hamilton-va-03.webp",
+        alt: "A stone retaining wall enclosing a garden bed with fresh mulch, bright green ground cover plants, and a central shrub in Hamilton, VA.",
+        caption: "Stone Retaining Wall Garden Bed Prep — Hamilton",
+      },
+      {
+        id: "spring-cleanup-&-mulch-installation-hamilton-va-gallery-5",
+        src: "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/spring-cleanup-&-mulch-installation-hamilton-va/spring-cleanup-&-mulch-installation-hamilton-va-05.webp",
+        alt: "Landscaping professional using a backpack leaf blower to clean a neatly trimmed hedge on a residential estate lawn in Hamilton, VA.",
+        caption: "Estate Hedge Trimming & Power Blowing — Hamilton",
+      },
+      {
+        id: "spring-cleanup-&-mulch-installation-hamilton-va-gallery-6",
+        src: "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/spring-cleanup-&-mulch-installation-hamilton-va/spring-cleanup-&-mulch-installation-hamilton-va-06.webp",
+        alt: "An expansive backyard landscape bed completely refreshed with dark premium mulch, blooming pink azaleas, and trimmed plants in Hamilton, VA.",
+        caption: "Large Scale Landscape Bed Refresher — Hamilton",
+      },
+      {
+        id: "spring-cleanup-&-mulch-installation-hamilton-va-gallery-7",
+        src: "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/spring-cleanup-&-mulch-installation-hamilton-va/spring-cleanup-&-mulch-installation-hamilton-va-07.webp",
+        alt: "A beautifully maintained stone patio walkway flanked by dense green ground cover and mulched garden beds lined with natural stone walls in Hamilton, VA.",
+        caption: "Patio Walkway & Border Bed Maintenance — Hamilton",
+      },
+      {
+        id: "spring-cleanup-&-mulch-installation-hamilton-va-gallery-8",
+        src: "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/spring-cleanup-&-mulch-installation-hamilton-va/spring-cleanup-&-mulch-installation-hamilton-va-08.webp",
+        alt: "A cleanly edged driveway landscape island with fresh mulch, vibrant purple flowers, hostas, and a small decorative flag in Hamilton, VA.",
+        caption: "Driveway Island Bed Edging & Mulching — Hamilton",
+      },
+    ],
+  },
+  {
+    id: "spring-cleanup-&-premium-black-mulch-installation-hamilton-va",
+    title: "Hamilton, VA",
+    service: "Spring Cleanup & Premium Black Mulch Installation",
+    image:
+      "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/spring-cleanup-&-premium-black-mulch-installation-hamilton-va/spring-cleanup-&-premium-black-mulch-installation-hamilton-va-01.webp",
+    beforeImage:
+      "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/spring-cleanup-&-premium-black-mulch-installation-hamilton-va/spring-cleanup-&-premium-black-mulch-installation-hamilton-va-03.webp",
+    afterImage:
+      "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/spring-cleanup-&-premium-black-mulch-installation-hamilton-va/spring-cleanup-&-premium-black-mulch-installation-hamilton-va-04.webp",
+    gallery: [
+      {
+        id: "spring-cleanup-&-premium-black-mulch-installation-hamilton-va-gallery-2",
+        src: "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/spring-cleanup-&-premium-black-mulch-installation-hamilton-va/spring-cleanup-&-premium-black-mulch-installation-hamilton-va-02.webp",
+        alt: "A street view of a residential house in Hamilton, VA, framed by mature green trees under a blue sky with scattered clouds.",
+        caption: "Full Property Tree Care & Landscaping — Hamilton",
+      },
+      {
+        id: "spring-cleanup-&-premium-black-mulch-installation-hamilton-va-gallery-5",
+        src: "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/spring-cleanup-&-premium-black-mulch-installation-hamilton-va/spring-cleanup-&-premium-black-mulch-installation-hamilton-va-05.webp",
+        alt: "A large brick estate house in Hamilton, VA, showcasing perfectly manicured round shrubs, fresh premium black mulch beds, and a clean stone walkway.",
+        caption: "Premium Black Mulch Bed & Shrub Care — Hamilton",
+      },
+    ],
+  },
+  {
+    id: "spring-cleanup-&-premium-black-mulch-installation-selma-va",
+    title: "Selma, VA",
+    service: "Spring Cleanup & Premium Black Mulch Installation",
+    image:
+      "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/spring-cleanup-&-premium-black-mulch-installation-selma-va/spring-cleanup-&-premium-black-mulch-installation-selma-va-02.webp",
+    beforeImage:
+      "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/spring-cleanup-&-premium-black-mulch-installation-selma-va/spring-cleanup-&-premium-black-mulch-installation-selma-va-03.webp",
+    afterImage:
+      "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/spring-cleanup-&-premium-black-mulch-installation-selma-va/spring-cleanup-&-premium-black-mulch-installation-selma-va-01.webp",
+    gallery: [],
+  },
+  {
+    id: "spring-cleanup-&-premium-black-mulch-taylorstown-va",
+    title: "Taylorstown, VA",
+    service: "Spring Cleanup & Premium Black Mulch Installation",
+    image:
+      "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/spring-cleanup-&-premium-black-mulch-taylorstown-va/spring-cleanup-&-premium-black-mulch-taylorstown-va-01.webp",
+    beforeImage:
+      "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/spring-cleanup-&-premium-black-mulch-taylorstown-va/spring-cleanup-&-premium-black-mulch-taylorstown-va-01.webp",
+    afterImage:
+      "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/spring-cleanup-&-premium-black-mulch-taylorstown-va/spring-cleanup-&-premium-black-mulch-taylorstown-va-01.webp",
+    gallery: [],
+  },
+  {
+    id: "triming",
+    title: "Trimming",
+    service: "Trimming",
+    image:
+      "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/triming/triming-07.webp",
+    beforeImage:
+      "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/triming/triming-05.webp",
+    afterImage:
+      "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/triming/triming-01.webp",
+    gallery: [
+      {
+        id: "landscape-trimming-02",
+        src: "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/trimming/trimming-02.webp",
+        alt: "A perfectly manicured backyard featuring boxwood hedges sculpted around a central tree, a colorful annual flower bed border, and a large ceramic planter.",
+        caption: "Custom Hedge Sculpting & Flower Bed Design",
+      },
+      {
+        id: "landscape-trimming-03",
+        src: "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/trimming/trimming-03.webp",
+        alt: "A professionally trimmed ornamental evergreen tree with sculpted cloud-like tiers standing next to a brick house facade.",
+        caption: "Ornamental Evergreen Pruning & Topiary Shaping",
+      },
+      {
+        id: "landscape-trimming-04",
+        src: "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/trimming/trimming-04.webp",
+        alt: "A wooden ladder placed next to large, round sculpted privacy bushes on a sunny lawn during a routine trimming project.",
+        caption: "Large Privacy Shrub Perfiling & Maintenance",
+      },
+      {
+        id: "landscape-trimming-06",
+        src: "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/trimming/trimming-06.webp",
+        alt: "Landscaping professional using a motorized hedge trimmer to shape a neat boxwood hedge line along a front walkway.",
+        caption: "Precision Front Walkway Hedge Trimming",
+      },
+    ],
+  },
+  {
+    id: "vegetable-garden-fence-weed-barrier-&-gravel-installation-lucketts-va",
+    title: "Lucketts, VA",
+    service: "Vegetable Garden Fence Weed Barrier & Gravel Installation",
+    image:
+      "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/vegetable-garden-fence-weed-barrier-&-gravel-installation-lucketts-va/vegetable-garden-fence-weed-barrier-&-gravel-installation-lucketts-va-08.webp",
+    beforeImage:
+      "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/vegetable-garden-fence-weed-barrier-&-gravel-installation-lucketts-va/vegetable-garden-fence-weed-barrier-&-gravel-installation-lucketts-va-03.webp",
+    afterImage:
+      "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/vegetable-garden-fence-weed-barrier-&-gravel-installation-lucketts-va/vegetable-garden-fence-weed-barrier-&-gravel-installation-lucketts-va-07.webp",
+    gallery: [
+      {
+        id: "vegetable-garden-installation-lucketts-02",
+        src: "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/vegetable-garden-fence-weed-barrier-&-gravel-installation-lucketts-va/vegetable-garden-fence-weed-barrier-&-gravel-installation-lucketts-va-02.webp",
+        alt: "A landscaping trailer loaded with lumber, fence wire rolls, and bags of concrete mix ready for a garden installation in Lucketts, VA.",
+        caption: "Garden Construction Material Delivery — Lucketts",
+      },
+      {
+        id: "vegetable-garden-installation-lucketts-03",
+        src: "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/vegetable-garden-fence-weed-barrier-&-gravel-installation-lucketts-va/vegetable-garden-fence-weed-barrier-&-gravel-installation-lucketts-va-03.webp",
+        alt: "Work in progress of a custom wooden garden fence enclosing garden beds lined with black weed barrier fabric in Lucketts, VA.",
+        caption: "Custom Garden Fencing & Weed Barrier Installation — Lucketts",
+      },
+      {
+        id: "vegetable-garden-installation-lucketts-04",
+        src: "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/vegetable-garden-fence-weed-barrier-&-gravel-installation-lucketts-va/vegetable-garden-fence-weed-barrier-&-gravel-installation-lucketts-va-04.webp",
+        alt: "Front view of a newly installed wooden garden fence gate on a sunny day in Lucketts, VA.",
+        caption: "Custom Fence Gate Installation — Lucketts",
+      },
+      {
+        id: "vegetable-garden-installation-lucketts-05",
+        src: "https://vsvwckoszrikdlnbixdi.supabase.co/storage/v1/object/public/portfolio/vegetable-garden-fence-weed-barrier-&-gravel-installation-lucketts-va/vegetable-garden-fence-weed-barrier-&-gravel-installation-lucketts-va-05.webp",
+        alt: "Completed garden area featuring raised beds with fresh soil, protective fencing, and clean gravel walkways in Lucketts, VA.",
+        caption: "Raised Bed Setup & Gravel Walkways — Lucketts",
+      },
+    ],
+  },
 ];
