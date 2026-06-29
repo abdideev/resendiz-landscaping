@@ -12,6 +12,10 @@ interface ProjectsGallerySectionProps {
   images: readonly GalleryImage[];
 }
 
+function blockContextMenu(e: React.MouseEvent) {
+  e.preventDefault();
+}
+
 export function ProjectsGallerySection({
   images,
 }: ProjectsGallerySectionProps) {
@@ -50,6 +54,8 @@ export function ProjectsGallerySection({
                 <button
                   type="button"
                   onClick={() => openLightbox(index)}
+                  /* Bloquea click derecho en las miniaturas */
+                  onContextMenu={blockContextMenu}
                   className="group relative aspect-square w-full overflow-hidden rounded-md cursor-pointer"
                 >
                   <Image
@@ -58,6 +64,7 @@ export function ProjectsGallerySection({
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    draggable={false}
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />
                 </button>
