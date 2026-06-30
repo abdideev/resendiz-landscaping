@@ -39,11 +39,6 @@ export const metadata: Metadata = {
     "cleanups",
   ],
 
-  robots: {
-    index: false,
-    follow: false,
-  },
-
   openGraph: {
     type: "website",
     locale: "en_US",
