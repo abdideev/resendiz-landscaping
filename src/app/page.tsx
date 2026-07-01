@@ -2,6 +2,7 @@ import { HeroSection } from "@/components/features/home/HeroSection";
 import { ServicesPreviewSection } from "@/components/features/home/ServicesPreviewSection";
 import { TestimonialSection } from "@/components/features/home/TestimonialsSection";
 import { ServiceAreasSection } from "@/components/features/home/ServiceAreasSection";
+import { LawnCareSection } from "@/components/features/home/LawnCareSection";
 
 function Home() {
   return (
@@ -9,6 +10,7 @@ function Home() {
       <HeroSection />
       <ServicesPreviewSection />
       <TestimonialSection />
+      <LawnCareSection />
       <ServiceAreasSection />
     </main>
   );
